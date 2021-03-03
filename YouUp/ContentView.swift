@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  YouUp
 //
-//  Created by Andrew Hartsfield on 3/2/21.
+//  Created by Andrew Hartsfield and JJ Stephens on 3/2/21.
 //
 
 import SwiftUI

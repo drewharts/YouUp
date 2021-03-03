@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1900E0A925EF3CBE00414905 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 198EA5D725EF3C1100B71C34 /* GoogleService-Info.plist */; };
+		1900E0AD25EF3CC400414905 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 198EA5D725EF3C1100B71C34 /* GoogleService-Info.plist */; };
+		1900E0B125EF3CC500414905 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 198EA5D725EF3C1100B71C34 /* GoogleService-Info.plist */; };
 		63E7379325EF2F5100561DD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7379225EF2F5100561DD5 /* AppDelegate.swift */; };
 		63E7379525EF2F5100561DD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7379425EF2F5100561DD5 /* SceneDelegate.swift */; };
 		63E7379725EF2F5100561DD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7379625EF2F5100561DD5 /* ContentView.swift */; };
@@ -15,6 +18,7 @@
 		63E7379F25EF2F5300561DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E7379D25EF2F5300561DD5 /* LaunchScreen.storyboard */; };
 		63E737AA25EF2F5300561DD5 /* YouUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E737A925EF2F5300561DD5 /* YouUpTests.swift */; };
 		63E737B525EF2F5300561DD5 /* YouUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E737B425EF2F5300561DD5 /* YouUpUITests.swift */; };
+		CE78C61DC86273D68595DB5E /* libPods-YouUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B14266C6E4FA502E943A0B5 /* libPods-YouUp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		198EA5D725EF3C1100B71C34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1B14266C6E4FA502E943A0B5 /* libPods-YouUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YouUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E7378F25EF2F5100561DD5 /* YouUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E7379225EF2F5100561DD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E7379425EF2F5100561DD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		63E737B025EF2F5300561DD5 /* YouUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E737B425EF2F5300561DD5 /* YouUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouUpUITests.swift; sourceTree = "<group>"; };
 		63E737B625EF2F5300561DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BB0A5016FA156401AF1413D /* Pods-YouUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouUp.debug.xcconfig"; path = "Target Support Files/Pods-YouUp/Pods-YouUp.debug.xcconfig"; sourceTree = "<group>"; };
+		E1EFF6C8252C2A3B9BDF5CD9 /* Pods-YouUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouUp.release.xcconfig"; path = "Target Support Files/Pods-YouUp/Pods-YouUp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE78C61DC86273D68595DB5E /* libPods-YouUp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B221844A5BE106E6916D1FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B14266C6E4FA502E943A0B5 /* libPods-YouUp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		63E7378625EF2F5100561DD5 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +100,8 @@
 				63E737A825EF2F5300561DD5 /* YouUpTests */,
 				63E737B325EF2F5300561DD5 /* YouUpUITests */,
 				63E7379025EF2F5100561DD5 /* Products */,
+				FC3DD53E455F8365E22EDEDE /* Pods */,
+				3B221844A5BE106E6916D1FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +118,7 @@
 		63E7379125EF2F5100561DD5 /* YouUp */ = {
 			isa = PBXGroup;
 			children = (
+				198EA5D725EF3C1100B71C34 /* GoogleService-Info.plist */,
 				63E7379225EF2F5100561DD5 /* AppDelegate.swift */,
 				63E7379425EF2F5100561DD5 /* SceneDelegate.swift */,
 				63E7379625EF2F5100561DD5 /* ContentView.swift */,
@@ -136,6 +156,15 @@
 			path = YouUpUITests;
 			sourceTree = "<group>";
 		};
+		FC3DD53E455F8365E22EDEDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BB0A5016FA156401AF1413D /* Pods-YouUp.debug.xcconfig */,
+				E1EFF6C8252C2A3B9BDF5CD9 /* Pods-YouUp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63E737B925EF2F5300561DD5 /* Build configuration list for PBXNativeTarget "YouUp" */;
 			buildPhases = (
+				DCA9EF1168DB8DB33313B1EF /* [CP] Check Pods Manifest.lock */,
 				63E7378B25EF2F5100561DD5 /* Sources */,
 				63E7378C25EF2F5100561DD5 /* Frameworks */,
 				63E7378D25EF2F5100561DD5 /* Resources */,
@@ -240,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E7379F25EF2F5300561DD5 /* LaunchScreen.storyboard in Resources */,
+				1900E0A925EF3CBE00414905 /* GoogleService-Info.plist in Resources */,
 				63E7379C25EF2F5300561DD5 /* Preview Assets.xcassets in Resources */,
 				63E7379925EF2F5300561DD5 /* Assets.xcassets in Resources */,
 			);
@@ -249,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1900E0AD25EF3CC400414905 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,10 +288,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1900E0B125EF3CC500414905 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DCA9EF1168DB8DB33313B1EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YouUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63E7378B25EF2F5100561DD5 /* Sources */ = {
@@ -433,6 +491,7 @@
 		};
 		63E737BA25EF2F5300561DD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BB0A5016FA156401AF1413D /* Pods-YouUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,6 +513,7 @@
 		};
 		63E737BB25EF2F5300561DD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1EFF6C8252C2A3B9BDF5CD9 /* Pods-YouUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
