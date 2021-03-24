@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    //var onlineIndicator = OnlineIndicator()
+    @EnvironmentObject var userInfo: UserInfo
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Group {
+            if userInfo.isUserAuthenticated == .undefined {
+                Text("Loading...")
+            } else if userInfo.isUserAuthenticated == .signedOut {
+                LoginView()
+            } else {
+                HomeView()
+            }
+        }
+        .onAppear {
+            self.userInfo.configureFirebaseStateDidChange()
+        }
     }
 }
 

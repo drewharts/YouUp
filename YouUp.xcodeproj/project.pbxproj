@@ -3,13 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1900E0A925EF3CBE00414905 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 198EA5D725EF3C1100B71C34 /* GoogleService-Info.plist */; };
 		1900E0AD25EF3CC400414905 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 198EA5D725EF3C1100B71C34 /* GoogleService-Info.plist */; };
 		1900E0B125EF3CC500414905 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 198EA5D725EF3C1100B71C34 /* GoogleService-Info.plist */; };
+		19275927260986C9000EE872 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19275926260986C9000EE872 /* UserInfo.swift */; };
+		1927592C260988A2000EE872 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927592B260988A2000EE872 /* LoginView.swift */; };
+		1927593126098926000EE872 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927593026098926000EE872 /* HomeView.swift */; };
+		1927593626098B7D000EE872 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927593526098B7C000EE872 /* UserViewModel.swift */; };
+		1927594526098CB6000EE872 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927594226098CB5000EE872 /* SignUpView.swift */; };
+		1927594626098CB6000EE872 /* SignInWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927594326098CB5000EE872 /* SignInWithEmailView.swift */; };
+		1927594726098CB6000EE872 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927594426098CB6000EE872 /* ForgotPasswordView.swift */; };
+		1927595926098EF7000EE872 /* SignInWithAppleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927595826098EF7000EE872 /* SignInWithAppleView.swift */; };
+		1927596E260AE26C000EE872 /* FBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927596A260AE26C000EE872 /* FBUser.swift */; };
+		1927596F260AE26C000EE872 /* FBFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927596B260AE26C000EE872 /* FBFireStore.swift */; };
+		19275970260AE26C000EE872 /* FBFireStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927596C260AE26C000EE872 /* FBFireStoreError.swift */; };
+		19275971260AE26C000EE872 /* FBKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927596D260AE26C000EE872 /* FBKeys.swift */; };
+		19275977260AE273000EE872 /* FBAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19275975260AE273000EE872 /* FBAuth.swift */; };
+		19275978260AE273000EE872 /* FBAuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19275976260AE273000EE872 /* FBAuthError.swift */; };
 		63E7379325EF2F5100561DD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7379225EF2F5100561DD5 /* AppDelegate.swift */; };
 		63E7379525EF2F5100561DD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7379425EF2F5100561DD5 /* SceneDelegate.swift */; };
 		63E7379725EF2F5100561DD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7379625EF2F5100561DD5 /* ContentView.swift */; };
@@ -18,7 +32,7 @@
 		63E7379F25EF2F5300561DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E7379D25EF2F5300561DD5 /* LaunchScreen.storyboard */; };
 		63E737AA25EF2F5300561DD5 /* YouUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E737A925EF2F5300561DD5 /* YouUpTests.swift */; };
 		63E737B525EF2F5300561DD5 /* YouUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E737B425EF2F5300561DD5 /* YouUpUITests.swift */; };
-		CE78C61DC86273D68595DB5E /* libPods-YouUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B14266C6E4FA502E943A0B5 /* libPods-YouUp.a */; };
+		E97BCEC7D146F28A194233BD /* libPods-YouUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B6666CC61EF614FA067DC7 /* libPods-YouUp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +53,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19275926260986C9000EE872 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		1927592B260988A2000EE872 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1927593026098926000EE872 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1927593526098B7C000EE872 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		1927594226098CB5000EE872 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		1927594326098CB5000EE872 /* SignInWithEmailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWithEmailView.swift; sourceTree = "<group>"; };
+		1927594426098CB6000EE872 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		1927595826098EF7000EE872 /* SignInWithAppleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWithAppleView.swift; sourceTree = "<group>"; };
+		1927596326099048000EE872 /* YouUp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YouUp.entitlements; sourceTree = "<group>"; };
+		1927596A260AE26C000EE872 /* FBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBUser.swift; sourceTree = "<group>"; };
+		1927596B260AE26C000EE872 /* FBFireStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBFireStore.swift; sourceTree = "<group>"; };
+		1927596C260AE26C000EE872 /* FBFireStoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBFireStoreError.swift; sourceTree = "<group>"; };
+		1927596D260AE26C000EE872 /* FBKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBKeys.swift; sourceTree = "<group>"; };
+		19275975260AE273000EE872 /* FBAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBAuth.swift; sourceTree = "<group>"; };
+		19275976260AE273000EE872 /* FBAuthError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBAuthError.swift; sourceTree = "<group>"; };
 		198EA5D725EF3C1100B71C34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		1B14266C6E4FA502E943A0B5 /* libPods-YouUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YouUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B6666CC61EF614FA067DC7 /* libPods-YouUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YouUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E7378F25EF2F5100561DD5 /* YouUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E7379225EF2F5100561DD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E7379425EF2F5100561DD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE78C61DC86273D68595DB5E /* libPods-YouUp.a in Frameworks */,
+				E97BCEC7D146F28A194233BD /* libPods-YouUp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +114,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1927593D26098C18000EE872 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				1927593E26098C26000EE872 /* Auth */,
+				1927593F26098C2C000EE872 /* Firestore */,
+				1927594126098C66000EE872 /* Views */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		1927593E26098C26000EE872 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				19275975260AE273000EE872 /* FBAuth.swift */,
+				19275976260AE273000EE872 /* FBAuthError.swift */,
+				1927593526098B7C000EE872 /* UserViewModel.swift */,
+				19275926260986C9000EE872 /* UserInfo.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1927593F26098C2C000EE872 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				1927596B260AE26C000EE872 /* FBFireStore.swift */,
+				1927596C260AE26C000EE872 /* FBFireStoreError.swift */,
+				1927596D260AE26C000EE872 /* FBKeys.swift */,
+				1927596A260AE26C000EE872 /* FBUser.swift */,
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
+		1927594126098C66000EE872 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1927592B260988A2000EE872 /* LoginView.swift */,
+				1927595826098EF7000EE872 /* SignInWithAppleView.swift */,
+				1927594426098CB6000EE872 /* ForgotPasswordView.swift */,
+				1927594326098CB5000EE872 /* SignInWithEmailView.swift */,
+				1927594226098CB5000EE872 /* SignUpView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3B221844A5BE106E6916D1FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1B14266C6E4FA502E943A0B5 /* libPods-YouUp.a */,
+				26B6666CC61EF614FA067DC7 /* libPods-YouUp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,10 +191,13 @@
 		63E7379125EF2F5100561DD5 /* YouUp */ = {
 			isa = PBXGroup;
 			children = (
+				1927596326099048000EE872 /* YouUp.entitlements */,
 				198EA5D725EF3C1100B71C34 /* GoogleService-Info.plist */,
+				1927593D26098C18000EE872 /* Firebase */,
 				63E7379225EF2F5100561DD5 /* AppDelegate.swift */,
 				63E7379425EF2F5100561DD5 /* SceneDelegate.swift */,
 				63E7379625EF2F5100561DD5 /* ContentView.swift */,
+				1927593026098926000EE872 /* HomeView.swift */,
 				63E7379825EF2F5300561DD5 /* Assets.xcassets */,
 				63E7379D25EF2F5300561DD5 /* LaunchScreen.storyboard */,
 				63E737A025EF2F5300561DD5 /* Info.plist */,
@@ -176,6 +252,7 @@
 				63E7378B25EF2F5100561DD5 /* Sources */,
 				63E7378C25EF2F5100561DD5 /* Frameworks */,
 				63E7378D25EF2F5100561DD5 /* Resources */,
+				8E4A6D0B1C24460DC08484BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,6 +372,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8E4A6D0B1C24460DC08484BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YouUp/Pods-YouUp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YouUp/Pods-YouUp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YouUp/Pods-YouUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DCA9EF1168DB8DB33313B1EF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,9 +418,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19275970260AE26C000EE872 /* FBFireStoreError.swift in Sources */,
+				19275977260AE273000EE872 /* FBAuth.swift in Sources */,
+				1927594626098CB6000EE872 /* SignInWithEmailView.swift in Sources */,
+				19275978260AE273000EE872 /* FBAuthError.swift in Sources */,
+				19275927260986C9000EE872 /* UserInfo.swift in Sources */,
 				63E7379325EF2F5100561DD5 /* AppDelegate.swift in Sources */,
 				63E7379525EF2F5100561DD5 /* SceneDelegate.swift in Sources */,
+				1927593126098926000EE872 /* HomeView.swift in Sources */,
+				19275971260AE26C000EE872 /* FBKeys.swift in Sources */,
+				1927595926098EF7000EE872 /* SignInWithAppleView.swift in Sources */,
+				1927596E260AE26C000EE872 /* FBUser.swift in Sources */,
+				1927594526098CB6000EE872 /* SignUpView.swift in Sources */,
+				1927592C260988A2000EE872 /* LoginView.swift in Sources */,
+				1927593626098B7D000EE872 /* UserViewModel.swift in Sources */,
+				1927594726098CB6000EE872 /* ForgotPasswordView.swift in Sources */,
 				63E7379725EF2F5100561DD5 /* ContentView.swift in Sources */,
+				1927596F260AE26C000EE872 /* FBFireStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,9 +603,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = YouUp/YouUp.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"YouUp/Preview Content\"";
-				DEVELOPMENT_TEAM = 585YK2F2H6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = YouUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,6 +615,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.drewhartsfield.YouUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -517,6 +627,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = YouUp/YouUp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"YouUp/Preview Content\"";
 				DEVELOPMENT_TEAM = 585YK2F2H6;
