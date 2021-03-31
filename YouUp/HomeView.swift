@@ -13,7 +13,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             Text("Logged in as \(userInfo.user.name)")
-                .navigationBarTitle("Firebase Login")
+                .navigationBarTitle("You Up?")
                 .navigationBarItems(trailing: Button("Log Out") {
                     FBAuth.logout { (result) in
                         print("Logged out")
@@ -25,7 +25,7 @@ struct HomeView: View {
                     }
                     FBFirestore.retrieveFBUser(uid: uid) { (result) in
                         switch result {
-                        case .failure(let error):
+                        case .failure( _):
                             print("error.localizeDescription")
                             // Display some kind of alert
                         case .success(let user):
