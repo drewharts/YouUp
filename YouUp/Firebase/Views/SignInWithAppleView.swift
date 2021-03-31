@@ -40,7 +40,7 @@ struct SignInWithAppleView: UIViewRepresentable {
         
         @objc func didTapButton() {
             let provider = ASAuthorizationAppleIDProvider()
-            #warning("Need to provide a nonce")
+            currentNonce = FBAuth.randomNonceString()
             
             let request = provider.createRequest()
             // request full name and email from the user's Apple ID
@@ -86,7 +86,24 @@ struct SignInWithAppleView: UIViewRepresentable {
                     return
                 }
                 
-                #warning("Need to complete signin")
+                FBAuth.signInWithApple(idTokenString: idTokenString, nonce:nonce) { (result) in
+                    switch result {
+                    case .failure(let error):
+                        print(error.localizedDescription)
+                    case .success(let authDataResult):
+                        //Handle this result
+                        let signInWithAppleResult = (authDataResult, appleIDCredential)
+                        FBAuth.handle(signInWithAppleResult) { (result) in
+                            switch result {
+                            case .failure(let error):
+                                print (error.localizedDescription)
+                            case .success( _):
+                                print("Successful Login")
+                            }
+                            
+                        }
+                    }
+                }
             } else {
                 print("Could not get credentials")
             }
