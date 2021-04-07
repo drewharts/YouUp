@@ -12,7 +12,7 @@ struct HomeView: View {
     @EnvironmentObject var userInfo: UserInfo
     var body: some View {
         NavigationView {
-            Text("Logged in as \(userInfo.user.name)")
+            Text(userInfo.getLoggedInStatus())
                 .navigationBarTitle("You Up?")
                 .navigationBarItems(trailing: Button("Log Out") {
                     FBAuth.logout { (result) in

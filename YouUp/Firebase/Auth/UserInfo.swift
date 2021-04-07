@@ -34,4 +34,12 @@ class UserInfo: ObservableObject {
 //            }
         })
     }
+    
+    func getLoggedInStatus() -> String {
+        if user.name == "" {
+            return "Logging you in..."
+        } else {
+            return "Logged in as \(user.name)"
+        }
+    }
 }
