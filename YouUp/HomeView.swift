@@ -2,7 +2,7 @@
 //  HomeView.swift
 //  YouUp
 //
-//  Created by JJ Stephens on 3/22/21.
+//  Created by Andrew Hartsfield and JJ Stephens on 3/22/21.
 //
 
 import SwiftUI
@@ -12,27 +12,37 @@ struct HomeView: View {
     @EnvironmentObject var userInfo: UserInfo
     var body: some View {
         NavigationView {
-            Text(userInfo.getLoggedInStatus())
-                .navigationBarTitle("You Up?")
-                .navigationBarItems(trailing: Button("Log Out") {
-                    FBAuth.logout { (result) in
-                        print("Logged out")
-                    }
-                })
-                .onAppear {
-                    guard let uid = Auth.auth().currentUser?.uid else {
-                        return
-                    }
-                    FBFirestore.retrieveFBUser(uid: uid) { (result) in
-                        switch result {
-                        case .failure( _):
-                            print("error.localizeDescription")
-                            // Display some kind of alert
-                        case .success(let user):
-                            self.userInfo.user = user
-                        }
+            VStack{
+                Text(userInfo.getLoggedInStatus())
+                    .padding()
+                Button(userInfo.upStatusString()) {
+                    userInfo.switchUpStatus()
+                }
+                    .frame(maxWidth: .infinity, maxHeight: 50) // makes button take up screen from side to side
+                    .accentColor(Color.white)
+                    .background(userInfo.getUpStatus() ? Color.red : Color.green)
+            }
+            //Set up NavigationView
+            .navigationBarTitle("You Up?")
+            .navigationBarItems(trailing: Button("Log Out") {
+                FBAuth.logout { (result) in
+                    print("Logged out")
+                }
+            })
+            .onAppear {
+                guard let uid = Auth.auth().currentUser?.uid else {
+                    return
+                }
+                FBFirestore.retrieveFBUser(uid: uid) { (result) in
+                    switch result {
+                    case .failure( _):
+                        print("error.localizeDescription")
+                        // Display some kind of alert
+                    case .success(let user):
+                        self.userInfo.user = user
                     }
                 }
+            }
         }
     }
 }

@@ -2,8 +2,7 @@
 //  SignInWithAppleView.swift
 //  Signin With Apple
 //
-//  Created by Stewart Lynch on 2020-03-18.
-//  Copyright © 2020 CreaTECH Solutions. All rights reserved.
+//  Code from Stewart Lynch Copyright © 2020 CreaTECH Solutions. All rights reserved.
 //
 
 import SwiftUI
