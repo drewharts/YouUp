@@ -18,7 +18,6 @@ class UserInfo: ObservableObject {
     @Published var isUserAuthenticated: FBAuthState = .undefined
     @Published var onlineStatus: UpState = .notup
     @Published var user: FBUser = .init(uid: "", name: "", email: "")
-    let date = DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .none)
     
     var authStateDidChangeListenerHandle: AuthStateDidChangeListenerHandle?
     
