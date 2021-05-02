@@ -12,7 +12,11 @@ class UserInfo: ObservableObject {
     enum FBAuthState {
         case undefined, signedOut, signedIn
     }
+    enum UpState {
+        case up, notup
+    }
     @Published var isUserAuthenticated: FBAuthState = .undefined
+    @Published var onlineStatus: UpState = .notup
     @Published var user: FBUser = .init(uid: "", name: "", email: "")
     
     var authStateDidChangeListenerHandle: AuthStateDidChangeListenerHandle?
@@ -33,5 +37,51 @@ class UserInfo: ObservableObject {
 //                }
 //            }
         })
+    }
+    
+    // Switch online status
+    func switchUpStatus() {
+        if getUpStatus() {
+            setUpStatus(changeToOnline: false)
+        } else {
+            setUpStatus(changeToOnline: true)
+        }
+    }
+    
+    // Set online status
+    func setUpStatus(changeToOnline:Bool) {
+        if changeToOnline {
+            onlineStatus = .up
+        } else {
+            onlineStatus = .notup
+        }
+    }
+    
+    // Return online status as bool
+    func getUpStatus() -> Bool {
+        if onlineStatus == .up {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    // Return online status as a string
+    func upStatusString() -> String {
+        if getUpStatus() {
+            return "Cancel (22) minutes remaining"
+        } else {
+            return "I'm up"
+        }
+    }
+    
+    func getLoggedInStatus() -> String {
+        if isUserAuthenticated == .undefined {
+            return "Logging you in..."
+        } else if isUserAuthenticated == .signedIn {
+            return "Logged in as \(user.name)"
+        } else {
+            return "Logged Out"
+        }
     }
 }

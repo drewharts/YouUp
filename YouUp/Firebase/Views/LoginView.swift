@@ -2,8 +2,6 @@
 //  LoginView.swift
 //  YouUp
 //
-//  Created by JJ Stephens on 3/22/21.
-//
 
 import SwiftUI
 
