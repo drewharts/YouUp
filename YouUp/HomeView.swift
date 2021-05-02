@@ -13,15 +13,19 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack{
-                Text(userInfo.getLoggedInStatus())
-                    .padding()
+                ScrollView{
+                    // Contacts here
+                }
+                Spacer()
                 Button(userInfo.upStatusString()) {
                     userInfo.switchUpStatus()
                 }
-                    .frame(maxWidth: .infinity, maxHeight: 50) // makes button take up screen from side to side
-                    .accentColor(Color.white)
-                    .background(userInfo.getUpStatus() ? Color.red : Color.green)
+                .frame(maxWidth: .infinity) // makes button take up screen from side to side
+                .padding()
+                .accentColor(Color.white)
+                .background(userInfo.getUpStatus() ? Color.red : Color.green)
             }
+            .frame(maxHeight: .infinity)
             //Set up NavigationView
             .navigationBarTitle("You Up?")
             .navigationBarItems(trailing: Button("Log Out") {
